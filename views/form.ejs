@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hiba{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <form method="post">
+        <p>
+            <label>
+                    Nev: <br>
+                    <input name="nev" id="nev" type="text" >
+            </label>
+            <p class="hiba" id="nevHiba">Töltsd ki a név mezőt!</p>
+        </p>
+        <p>
+            <label>
+                    Típus: <br>
+                    <input name="tipus" id="tipus" type="text">
+            </label>
+            <p class="hiba" id="tipusHiba">Töltsd ki a típus mezőt!</p>
+        </p>
+        <p>
+            <label>
+                    Szín: <br>
+                    <input name="szin" id="szin" type="color">
+            </label>
+        </p>
+        <p>
+            <label>
+                    Ár: <br>
+                    <input name="ar" id="ar" type="number" min="0"></input>
+            </label>
+            <p class="hiba" id="arHiba">Töltsd ki a ár mezőt!</p>
+        </p>
+        <p>
+            <label>
+                    Akkumlátor állapota(%): <br>
+                    <input name="akkumlator" id="akkumlator" type="number" max="100" min="0"></input>
+            </label>
+            <p class="hiba" id="akkumlatorHiba" >Töltsd ki a akkumlátor mezőt!</p>
+        </p>
+        <p>
+            <label>
+                    Állapot: <br>
+                    <select name="allapot" id="allapot">
+                        <option value="Új">Új</option>
+                        <option value="Újeszerű">Újszerű</option>
+                        <option value="Karcos">Karcos</option>
+                    </select>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="OK" id="submit">
+        </p>    
+    </form> 
+    <script src="main.js"></script> 
+</body>
+</html>

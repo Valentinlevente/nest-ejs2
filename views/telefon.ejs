@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="
+        width: 500px;
+        height: 800px;
+        border: 5px solid <%= szin %>;
+        border-radius: 30px;
+        margin: 0 auto;
+        padding: 20px;
+    ">
+    <progress value="<%= akkumlator %>" max="100" style="
+        height: 30px;
+        width: 80px;
+        float: right;
+    "><%= akkumlator %> %</progress>
+    <h3><%= nev %>: <%= tipus %></h3><br>
+    <h4>Ár: <%= ar %></h4><br>
+    <h4>Állapot: <%= allapot %></h4>
+    
+
+
+
+
+    </div>
+</body>
+</html>
